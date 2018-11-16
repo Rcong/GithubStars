@@ -27,14 +27,9 @@ class LoginForm extends Component {
     }
 
     render() {
-        let { form, loginData,  } = this.props;
+        let { form, loginData } = this.props;
         let { getFieldDecorator } = form;
-        let { loginErrorMsg, isLogin, loginLoading  } = loginData;
-
-        if (isLogin) {
-            this.props.history.push('/');
-            return
-        }
+        let { loginErrorMsg } = loginData;
 
         return (
             <div className="loginContainer">

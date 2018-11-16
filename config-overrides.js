@@ -16,6 +16,7 @@ module.exports = function override(config, env) {
 
     config.resolve.alias = {
         'Api':resolve('src/api'),
+        'Src':resolve('src'),
         'Components':resolve('src/components'),
         'Reducers':resolve('src/reducers'),
         'Pages':resolve('src/pages'),
